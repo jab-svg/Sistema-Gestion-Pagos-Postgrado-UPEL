@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudiantes — SGPP UPEL</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="../img/upel-banner.png" alt="UPEL" />
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-section">Navegación</div>
+          <a href="dashboard.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" /></svg
+            >Dashboard</a
+          >
+          <a href="maestrias.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              /></svg
+            >Maestrías</a
+          >
+          <a href="estudiantes.html" class="nav-item active"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+              /></svg
+            >Estudiantes</a
+          >
+          <a href="pagos.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+              /></svg
+            >Pagos</a
+          >
+          <a href="tasa.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Tasa BCV</a
+          >
+          <a href="reportes.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              /></svg
+            >Reportes</a
+          >
+          <a href="usuarios.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Usuarios</a
+          >
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-info">
+            <div class="user-avatar" id="userAvatar">A</div>
+            <div>
+              <div class="user-name" id="userName">Admin</div>
+              <div class="user-role" id="userRole">superadmin</div>
+            </div>
+          </div>
+          <a href="#" class="btn-logout" id="btnLogout">Cerrar sesión</a>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="topbar">
+          <div>
+            <div class="topbar-title">Estudiantes</div>
+            <div class="topbar-sub">Registro y consulta de estudiantes</div>
+          </div>
+          <div class="topbar-right">
+            <button class="btn btn-primary" id="btnNuevoEstudiante">
+              <svg
+                width="13"
+                height="13"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+              Nuevo Estudiante
+            </button>
+          </div>
+        </div>
+
+        <div class="content">
+          <div id="alertEst"></div>
+
+          <!-- Búsqueda por CI -->
+          <div class="card" style="margin-bottom: 20px">
+            <div class="card-title">Consulta Rápida por C.I.</div>
+            <div style="display: flex; gap: 12px; align-items: flex-end">
+              <div class="form-group" style="flex: 1; margin: 0">
+                <label>Cédula de Identidad</label>
+                <input
+                  type="text"
+                  id="inputBuscarCI"
+                  placeholder="Ej: 12345678"
+                />
+              </div>
+              <button class="btn btn-primary" id="btnBuscarCI">Buscar</button>
+            </div>
+            <div id="resultadoCI" style="margin-top: 16px; display: none">
+              <hr class="divider" />
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  gap: 16px;
+                "
+              >
+                <div>
+                  <div
+                    style="
+                      font-size: 0.72rem;
+                      color: var(--gray5);
+                      font-weight: 600;
+                      letter-spacing: 0.5px;
+                      text-transform: uppercase;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Estudiante
+                  </div>
+                  <div style="font-weight: 600" id="ciNombre">—</div>
+                  <div
+                    style="font-size: 0.82rem; color: var(--gray5)"
+                    id="ciCedula"
+                  >
+                    —
+                  </div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      font-size: 0.72rem;
+                      color: var(--gray5);
+                      font-weight: 600;
+                      letter-spacing: 0.5px;
+                      text-transform: uppercase;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Maestría
+                  </div>
+                  <div style="font-weight: 600" id="ciMaestria">—</div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      font-size: 0.72rem;
+                      color: var(--gray5);
+                      font-weight: 600;
+                      letter-spacing: 0.5px;
+                      text-transform: uppercase;
+                      margin-bottom: 6px;
+                    "
+                  >
+                    Solvencia
+                  </div>
+                  <div id="ciSolvencia">—</div>
+                  <div
+                    style="
+                      font-size: 0.8rem;
+                      color: var(--gray5);
+                      margin-top: 4px;
+                    "
+                    id="ciMontos"
+                  >
+                    —
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 14px; display: flex; gap: 8px">
+                <button class="btn btn-primary btn-sm" id="btnVerPagos">
+                  Ver Pagos
+                </button>
+                <button class="btn btn-ghost btn-sm" id="btnEditarCI">
+                  Editar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabla general -->
+          <div class="card">
+            <div class="card-title">Todos los Estudiantes</div>
+            <div class="search-bar">
+              <div class="search-wrap">
+                <svg
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.35-4.35" />
+                </svg>
+                <input
+                  type="text"
+                  id="buscarEst"
+                  placeholder="Buscar por nombre o C.I..."
+                />
+              </div>
+              <select
+                id="filtroMaestria"
+                style="
+                  padding: 9px 12px;
+                  border: 1px solid var(--gray4);
+                  border-radius: 6px;
+                  font-size: 0.88rem;
+                  outline: none;
+                "
+              >
+                <option value="">Todas las maestrías</option>
+              </select>
+              <select
+                id="filtroEstado"
+                style="
+                  padding: 9px 12px;
+                  border: 1px solid var(--gray4);
+                  border-radius: 6px;
+                  font-size: 0.88rem;
+                  outline: none;
+                "
+              >
+                <option value="">Todos los estados</option>
+                <option value="SOLVENTE">Solvente</option>
+                <option value="PAGADO_PARCIAL">Parcial</option>
+                <option value="PENDIENTE">Pendiente</option>
+              </select>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>C.I.</th>
+                    <th>Nombre</th>
+                    <th>Maestría</th>
+                    <th>Período</th>
+                    <th>Pagado</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody id="tablaEstudiantes">
+                  <tr>
+                    <td
+                      colspan="7"
+                      style="text-align: center; color: var(--gray5)"
+                    >
+                      Cargando...
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Modal nuevo/editar estudiante -->
+    <div class="modal-overlay" id="modalEstudiante" style="display: none">
+      <div class="modal" style="width: 620px; max-width: 96vw">
+        <div class="modal-title" id="modalEstTitle">Nuevo Estudiante</div>
+        <div id="alertModalEst"></div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Cédula de Identidad</label>
+            <input type="text" id="estCedula" placeholder="Solo números" />
+          </div>
+          <div class="form-group">
+            <label>Nombres</label>
+            <input type="text" id="estNombres" placeholder="Nombres" />
+          </div>
+          <div class="form-group">
+            <label>Apellidos</label>
+            <input type="text" id="estApellidos" placeholder="Apellidos" />
+          </div>
+          <div class="form-group">
+            <label>Teléfono</label>
+            <input type="text" id="estTelefono" placeholder="Ej: 04141234567" />
+          </div>
+          <div class="form-group form-full">
+            <label>Email</label>
+            <input type="email" id="estEmail" placeholder="correo@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Maestría</label>
+            <select id="estMaestria"></select>
+          </div>
+          <div class="form-group">
+            <label>Período</label>
+            <select id="estPeriodo">
+              <option value="">Selecciona maestría primero</option>
+            </select>
+          </div>
+        </div>
+        <input type="hidden" id="editEstId" />
+        <div class="modal-footer">
+          <button class="btn btn-ghost" id="btnCancelarEst">Cancelar</button>
+          <button class="btn btn-primary" id="btnGuardarEst">Guardar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script>
+      let estudiantesData = [];
+      let estudianteEditando = null;
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        if (!verificarAuth()) return;
+        const u = getUsuario();
+        if (u) {
+          document.getElementById("userName").textContent = u.nombre;
+          document.getElementById("userRole").textContent = u.rol;
+          document.getElementById("userAvatar").textContent = u.nombre
+            .charAt(0)
+            .toUpperCase();
+        }
+        document.getElementById("btnLogout").addEventListener("click", (e) => {
+          e.preventDefault();
+          cerrarSesion();
+        });
+
+        await cargarEstudiantes();
+        await cargarMaestrias();
+        bindEventos();
+      });
+
+      async function cargarEstudiantes() {
+        try {
+          const r = await get("/estudiantes");
+          estudiantesData = r.datos;
+          renderEstudiantes(estudiantesData);
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertEst"), err.message);
+        }
+      }
+
+      async function cargarMaestrias() {
+        try {
+          const r = await get("/maestrias");
+          const activas = r.datos.filter((m) => m.activa);
+          poblarSelect(
+            document.getElementById("filtroMaestria"),
+            activas,
+            "id",
+            "nombre",
+            "Todas las maestrías",
+          );
+          poblarSelect(
+            document.getElementById("estMaestria"),
+            activas,
+            "id",
+            "nombre",
+          );
+        } catch {
+          /* silencioso */
+        }
+      }
+
+      function renderEstudiantes(lista) {
+        const tbody = document.getElementById("tablaEstudiantes");
+        if (lista.length === 0) {
+          tbody.innerHTML =
+            '<tr><td colspan="7" style="text-align:center;color:var(--gray5)">Sin estudiantes registrados</td></tr>';
+          return;
+        }
+        tbody.innerHTML = lista
+          .map(
+            (e) => `
+        <tr>
+          <td style="font-family:monospace;font-size:.85rem">${e.cedula}</td>
+          <td style="font-weight:500">${e.apellidos}, ${e.nombres}</td>
+          <td>${e.maestria}</td>
+          <td><span class="badge badge-info">${e.periodo}</span></td>
+          <td>${formatUSD(e.total_pagado)}</td>
+          <td>${badgeEstado(e.estado)}</td>
+          <td style="display:flex;gap:6px">
+            <button class="btn btn-primary btn-sm" onclick="irAPagos(${e.inscripcion_id})">Pagos</button>
+            <button class="btn btn-ghost btn-sm" onclick="editarEstudiante(${e.id})">Editar</button>
+          </td>
+        </tr>`,
+          )
+          .join("");
+      }
+
+      function badgeEstado(estado) {
+        const map = {
+          SOLVENTE: '<span class="badge badge-success">Solvente</span>',
+          PAGADO_PARCIAL: '<span class="badge badge-warn">Parcial</span>',
+          PENDIENTE: '<span class="badge badge-danger">Pendiente</span>',
+        };
+        return map[estado] || `<span class="badge badge-gray">${estado}</span>`;
+      }
+
+      function irAPagos(inscripcion_id) {
+        localStorage.setItem("sgpp_inscripcion", inscripcion_id);
+        window.location.href = "pagos.html";
+      }
+
+      function bindEventos() {
+        // Búsqueda CI
+        document
+          .getElementById("btnBuscarCI")
+          .addEventListener("click", buscarPorCI);
+        document
+          .getElementById("inputBuscarCI")
+          .addEventListener("keydown", (e) => {
+            if (e.key === "Enter") buscarPorCI();
+          });
+
+        // Filtros tabla
+        const filtrar = () => {
+          const q = document.getElementById("buscarEst").value.toLowerCase();
+          const mId = document.getElementById("filtroMaestria").value;
+          const est = document.getElementById("filtroEstado").value;
+          renderEstudiantes(
+            estudiantesData.filter(
+              (e) =>
+                (!q ||
+                  e.cedula.includes(q) ||
+                  e.nombres.toLowerCase().includes(q) ||
+                  e.apellidos.toLowerCase().includes(q)) &&
+                (!mId || String(e.maestria_id) === mId) &&
+                (!est || e.estado === est),
+            ),
+          );
+        };
+        document.getElementById("buscarEst").addEventListener("input", filtrar);
+        document
+          .getElementById("filtroMaestria")
+          .addEventListener("change", filtrar);
+        document
+          .getElementById("filtroEstado")
+          .addEventListener("change", filtrar);
+
+        // Modal
+        document.getElementById("btnNuevoEstudiante").onclick = () =>
+          abrirModalEst();
+        document.getElementById("btnCancelarEst").onclick = () =>
+          cerrarModal("modalEstudiante");
+        document.getElementById("btnGuardarEst").onclick = guardarEstudiante;
+
+        // Maestría → períodos en modal
+        document
+          .getElementById("estMaestria")
+          .addEventListener("change", async (e) => {
+            const mId = e.target.value;
+            const sel = document.getElementById("estPeriodo");
+            if (!mId) {
+              sel.innerHTML =
+                '<option value="">Selecciona maestría primero</option>';
+              return;
+            }
+            try {
+              const r = await get(`/maestrias/${mId}/periodos`);
+              poblarSelect(
+                sel,
+                r.datos.filter((p) => p.activo),
+                "id",
+                "codigo",
+              );
+            } catch {
+              sel.innerHTML = '<option value="">Sin períodos</option>';
+            }
+          });
+      }
+
+      async function buscarPorCI() {
+        const cedula = document.getElementById("inputBuscarCI").value.trim();
+        if (!cedula) return;
+        try {
+          const r = await get(`/estudiantes/ci/${cedula}`);
+          const d = r.datos;
+          const insc = d.inscripciones?.[0];
+          document.getElementById("ciNombre").textContent =
+            `${d.apellidos}, ${d.nombres}`;
+          document.getElementById("ciCedula").textContent = `C.I. ${d.cedula}`;
+          document.getElementById("ciMaestria").textContent = d.maestria;
+          document.getElementById("ciSolvencia").innerHTML = insc
+            ? badgeEstado(insc.estado)
+            : "—";
+          document.getElementById("ciMontos").textContent = insc
+            ? `Pagado: ${formatUSD(insc.total_pagado)} / ${formatUSD(insc.costo_aplicado)}`
+            : "—";
+          document.getElementById("btnVerPagos").onclick = () => {
+            if (insc) irAPagos(insc.id);
+          };
+          document.getElementById("btnEditarCI").onclick = () =>
+            editarEstudiante(d.id);
+          document.getElementById("resultadoCI").style.display = "block";
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertEst"), err.message);
+          document.getElementById("resultadoCI").style.display = "none";
+        }
+      }
+
+      function abrirModalEst(datos = null) {
+        estudianteEditando = datos;
+        document.getElementById("modalEstTitle").textContent = datos
+          ? "Editar Estudiante"
+          : "Nuevo Estudiante";
+        document.getElementById("estCedula").value = datos?.cedula || "";
+        document.getElementById("estNombres").value = datos?.nombres || "";
+        document.getElementById("estApellidos").value = datos?.apellidos || "";
+        document.getElementById("estTelefono").value = datos?.telefono || "";
+        document.getElementById("estEmail").value = datos?.email || "";
+        document.getElementById("estCedula").disabled = !!datos;
+        document.getElementById("editEstId").value = datos?.id || "";
+        document.getElementById("alertModalEst").innerHTML = "";
+        document.getElementById("modalEstudiante").style.display = "flex";
+      }
+
+      async function editarEstudiante(id) {
+        try {
+          const r = await get(`/estudiantes/${id}`);
+          abrirModalEst(r.datos);
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertEst"), err.message);
+        }
+      }
+
+      async function guardarEstudiante() {
+        const id = document.getElementById("editEstId").value;
+        const alert = document.getElementById("alertModalEst");
+        const payload = {
+          cedula: document.getElementById("estCedula").value.trim(),
+          nombres: document.getElementById("estNombres").value.trim(),
+          apellidos: document.getElementById("estApellidos").value.trim(),
+          telefono: document.getElementById("estTelefono").value.trim(),
+          email: document.getElementById("estEmail").value.trim(),
+          maestria_id: document.getElementById("estMaestria").value,
+          periodo_id: document.getElementById("estPeriodo").value,
+        };
+        try {
+          if (id) await put(`/estudiantes/${id}`, payload);
+          else await post("/estudiantes", payload);
+          cerrarModal("modalEstudiante");
+          await cargarEstudiantes();
+          mostrarAlerta(
+            document.getElementById("alertEst"),
+            id
+              ? "Estudiante actualizado"
+              : "Estudiante registrado correctamente",
+            "success",
+          );
+        } catch (err) {
+          mostrarAlerta(alert, err.message);
+        }
+      }
+
+      function cerrarModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maestrías — SGPP UPEL</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="../img/upel-banner.png" alt="UPEL" />
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-section">Navegación</div>
+          <a href="dashboard.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" /></svg
+            >Dashboard</a
+          >
+          <a href="maestrias.html" class="nav-item active"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              /></svg
+            >Maestrías</a
+          >
+          <a href="estudiantes.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+              /></svg
+            >Estudiantes</a
+          >
+          <a href="pagos.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+              /></svg
+            >Pagos</a
+          >
+          <a href="tasa.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Tasa BCV</a
+          >
+          <a href="reportes.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              /></svg
+            >Reportes</a
+          >
+          <a href="usuarios.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Usuarios</a
+          >
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-info">
+            <div class="user-avatar" id="userAvatar">A</div>
+            <div>
+              <div class="user-name" id="userName">Admin</div>
+              <div class="user-role" id="userRole">superadmin</div>
+            </div>
+          </div>
+          <a href="#" class="btn-logout" id="btnLogout">Cerrar sesión</a>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="topbar">
+          <div>
+            <div class="topbar-title">Maestrías y Períodos</div>
+            <div class="topbar-sub">Gestión de programas académicos</div>
+          </div>
+          <div class="topbar-right">
+            <button class="btn btn-primary" id="btnNuevaMaestria">
+              <svg
+                width="13"
+                height="13"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+              Nueva Maestría
+            </button>
+          </div>
+        </div>
+
+        <div class="content">
+          <div id="alertMaestrias"></div>
+          <div class="grid-2">
+            <!-- Lista maestrías -->
+            <div class="card">
+              <div class="card-title">Programas Registrados</div>
+              <div class="search-bar">
+                <div class="search-wrap">
+                  <svg
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.35-4.35" />
+                  </svg>
+                  <input
+                    type="text"
+                    id="buscarMaestria"
+                    placeholder="Buscar maestría..."
+                  />
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Estado</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tablaMaestrias">
+                    <tr>
+                      <td
+                        colspan="3"
+                        style="text-align: center; color: var(--gray5)"
+                      >
+                        Cargando...
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Períodos -->
+            <div class="card">
+              <div class="card-title">Períodos Académicos</div>
+              <div
+                style="
+                  display: flex;
+                  gap: 10px;
+                  margin-bottom: 14px;
+                  align-items: flex-end;
+                "
+              >
+                <div class="form-group" style="flex: 1; margin: 0">
+                  <label>Maestría</label>
+                  <select id="selectMaestria">
+                    <option value="">Seleccionar maestría...</option>
+                  </select>
+                </div>
+                <button
+                  class="btn btn-primary btn-sm"
+                  id="btnNuevoPeriodo"
+                  disabled
+                >
+                  <svg
+                    width="12"
+                    height="12"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                  Nuevo
+                </button>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Código</th>
+                      <th>Costo USD</th>
+                      <th>Estado</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="tablaPeriodos">
+                    <tr>
+                      <td
+                        colspan="4"
+                        style="text-align: center; color: var(--gray5)"
+                      >
+                        Selecciona una maestría
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Modal maestría -->
+    <div class="modal-overlay" id="modalMaestria" style="display: none">
+      <div class="modal">
+        <div class="modal-title" id="modalMaestriaTitle">Nueva Maestría</div>
+        <div id="alertModalMaestria"></div>
+        <div class="form-group">
+          <label>Nombre de la Maestría</label>
+          <input
+            type="text"
+            id="inputNombreMaestria"
+            placeholder="Ej: Innovación Educativa"
+          />
+        </div>
+        <input type="hidden" id="editMaestriaId" />
+        <div class="modal-footer">
+          <button class="btn btn-ghost" id="btnCancelarMaestria">
+            Cancelar
+          </button>
+          <button class="btn btn-primary" id="btnGuardarMaestria">
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal período -->
+    <div class="modal-overlay" id="modalPeriodo" style="display: none">
+      <div class="modal">
+        <div class="modal-title" id="modalPeriodoTitle">Nuevo Período</div>
+        <div id="alertModalPeriodo"></div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Código</label>
+            <input type="text" id="inputCodigo" placeholder="Ej: 2026-1" />
+          </div>
+          <div class="form-group">
+            <label>Costo (USD)</label>
+            <input
+              type="number"
+              id="inputCosto"
+              step="0.01"
+              placeholder="Ej: 50.00"
+            />
+          </div>
+        </div>
+        <input type="hidden" id="editPeriodoId" />
+        <div class="modal-footer">
+          <button class="btn btn-ghost" id="btnCancelarPeriodo">
+            Cancelar
+          </button>
+          <button class="btn btn-primary" id="btnGuardarPeriodo">
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script>
+      let maestrias = [];
+      let maestriaSeleccionada = null;
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        if (!verificarAuth()) return;
+        const u = getUsuario();
+        if (u) {
+          document.getElementById("userName").textContent = u.nombre;
+          document.getElementById("userRole").textContent = u.rol;
+          document.getElementById("userAvatar").textContent = u.nombre
+            .charAt(0)
+            .toUpperCase();
+        }
+        document.getElementById("btnLogout").addEventListener("click", (e) => {
+          e.preventDefault();
+          cerrarSesion();
+        });
+        await cargarMaestrias();
+        bindEventos();
+      });
+
+      async function cargarMaestrias() {
+        try {
+          const r = await get("/maestrias");
+          maestrias = r.datos;
+          renderMaestrias(maestrias);
+          poblarSelect(
+            document.getElementById("selectMaestria"),
+            maestrias.filter((m) => m.activa),
+            "id",
+            "nombre",
+          );
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertMaestrias"), err.message);
+        }
+      }
+
+      function renderMaestrias(lista) {
+        const tbody = document.getElementById("tablaMaestrias");
+        if (lista.length === 0) {
+          tbody.innerHTML =
+            '<tr><td colspan="3" style="text-align:center;color:var(--gray5)">Sin maestrías registradas</td></tr>';
+          return;
+        }
+        tbody.innerHTML = lista
+          .map(
+            (m) => `
+        <tr>
+          <td style="font-weight:500">${m.nombre}</td>
+          <td><span class="badge ${m.activa ? "badge-success" : "badge-gray"}">${m.activa ? "Activa" : "Inactiva"}</span></td>
+          <td style="display:flex;gap:6px">
+            <button class="btn btn-ghost btn-sm" onclick="editarMaestria(${m.id},'${m.nombre.replace(/'/g, "\\'")}')">Editar</button>
+            <button class="btn ${m.activa ? "btn-danger" : "btn-success"} btn-sm" onclick="eliminarMaestria(${m.id})">
+              ${m.activa ? "Desactivar" : "Reactivar"}
+            </button>
+          </td>
+        </tr>`,
+          )
+          .join("");
+      }
+
+      function bindEventos() {
+        // Búsqueda
+        document
+          .getElementById("buscarMaestria")
+          .addEventListener("input", (e) => {
+            const q = e.target.value.toLowerCase();
+            renderMaestrias(
+              maestrias.filter((m) => m.nombre.toLowerCase().includes(q)),
+            );
+          });
+
+        // Select maestría → cargar períodos
+        document
+          .getElementById("selectMaestria")
+          .addEventListener("change", async (e) => {
+            maestriaSeleccionada = e.target.value;
+            document.getElementById("btnNuevoPeriodo").disabled =
+              !maestriaSeleccionada;
+            if (maestriaSeleccionada)
+              await cargarPeriodos(maestriaSeleccionada);
+            else
+              document.getElementById("tablaPeriodos").innerHTML =
+                '<tr><td colspan="4" style="text-align:center;color:var(--gray5)">Selecciona una maestría</td></tr>';
+          });
+
+        // Modal maestría
+        document.getElementById("btnNuevaMaestria").onclick = () =>
+          abrirModalMaestria();
+        document.getElementById("btnCancelarMaestria").onclick = () =>
+          cerrarModal("modalMaestria");
+        document.getElementById("btnGuardarMaestria").onclick = guardarMaestria;
+
+        // Modal período
+        document.getElementById("btnNuevoPeriodo").onclick = () =>
+          abrirModalPeriodo();
+        document.getElementById("btnCancelarPeriodo").onclick = () =>
+          cerrarModal("modalPeriodo");
+        document.getElementById("btnGuardarPeriodo").onclick = guardarPeriodo;
+      }
+
+      async function cargarPeriodos(maestria_id) {
+        try {
+          const r = await get(`/maestrias/${maestria_id}/periodos`);
+          const tbody = document.getElementById("tablaPeriodos");
+          if (r.datos.length === 0) {
+            tbody.innerHTML =
+              '<tr><td colspan="4" style="text-align:center;color:var(--gray5)">Sin períodos registrados</td></tr>';
+            return;
+          }
+          tbody.innerHTML = r.datos
+            .map(
+              (p) => `
+            <tr>
+              <td style="font-weight:600;color:var(--blue)">${p.codigo}</td>
+              <td>$${Number(p.costo_usd).toFixed(2)}</td>
+              <td><span class="badge ${p.activo ? "badge-success" : "badge-gray"}">${p.activo ? "Activo" : "Cerrado"}</span></td>
+              <td style="display:flex;gap:5px">
+                <button class="btn btn-ghost btn-sm" onclick="editarPeriodo(${p.id},'${p.codigo}',${p.costo_usd})">Editar</button>
+                <button class="btn ${p.activo ? "btn-danger" : "btn-success"} btn-sm" onclick="togglePeriodo(${p.id})">${p.activo ? "Cerrar" : "Reabrir"}</button>
+              </td>
+            </tr>`,
+            )
+            .join("");
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertMaestrias"), err.message);
+        }
+      }
+
+      function abrirModalMaestria(id = null, nombre = "") {
+        document.getElementById("modalMaestriaTitle").textContent = id
+          ? "Editar Maestría"
+          : "Nueva Maestría";
+        document.getElementById("inputNombreMaestria").value = nombre;
+        document.getElementById("editMaestriaId").value = id || "";
+        document.getElementById("alertModalMaestria").innerHTML = "";
+        document.getElementById("modalMaestria").style.display = "flex";
+      }
+
+      function editarMaestria(id, nombre) {
+        abrirModalMaestria(id, nombre);
+      }
+
+      async function guardarMaestria() {
+        const nombre = document
+          .getElementById("inputNombreMaestria")
+          .value.trim();
+        const id = document.getElementById("editMaestriaId").value;
+        const alert = document.getElementById("alertModalMaestria");
+        if (!nombre) {
+          mostrarAlerta(alert, "El nombre es requerido");
+          return;
+        }
+        try {
+          if (id) await put(`/maestrias/${id}`, { nombre });
+          else await post("/maestrias", { nombre });
+          cerrarModal("modalMaestria");
+          await cargarMaestrias();
+          mostrarAlerta(
+            document.getElementById("alertMaestrias"),
+            id ? "Maestría actualizada" : "Maestría creada correctamente",
+            "success",
+          );
+        } catch (err) {
+          mostrarAlerta(alert, err.message);
+        }
+      }
+
+      async function eliminarMaestria(id) {
+        if (!confirm("¿Confirmar cambio de estado de esta maestría?")) return;
+        try {
+          await del(`/maestrias/${id}`);
+          await cargarMaestrias();
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertMaestrias"), err.message);
+        }
+      }
+
+      function abrirModalPeriodo(id = null, codigo = "", costo = "") {
+        document.getElementById("modalPeriodoTitle").textContent = id
+          ? "Editar Período"
+          : "Nuevo Período";
+        document.getElementById("inputCodigo").value = codigo;
+        document.getElementById("inputCosto").value = costo;
+        document.getElementById("editPeriodoId").value = id || "";
+        document.getElementById("alertModalPeriodo").innerHTML = "";
+        document.getElementById("modalPeriodo").style.display = "flex";
+      }
+
+      function editarPeriodo(id, codigo, costo) {
+        abrirModalPeriodo(id, codigo, costo);
+      }
+
+      async function guardarPeriodo() {
+        const codigo = document.getElementById("inputCodigo").value.trim();
+        const costo_usd = document.getElementById("inputCosto").value;
+        const id = document.getElementById("editPeriodoId").value;
+        const alert = document.getElementById("alertModalPeriodo");
+        if (!codigo || !costo_usd) {
+          mostrarAlerta(alert, "Todos los campos son requeridos");
+          return;
+        }
+        try {
+          if (id)
+            await put(`/maestrias/${maestriaSeleccionada}/periodos/${id}`, {
+              codigo,
+              costo_usd,
+            });
+          else
+            await post(`/maestrias/${maestriaSeleccionada}/periodos`, {
+              codigo,
+              costo_usd,
+            });
+          cerrarModal("modalPeriodo");
+          await cargarPeriodos(maestriaSeleccionada);
+          mostrarAlerta(
+            document.getElementById("alertMaestrias"),
+            id ? "Período actualizado" : "Período creado correctamente",
+            "success",
+          );
+        } catch (err) {
+          mostrarAlerta(alert, err.message);
+        }
+      }
+
+      function cerrarModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+
+      async function togglePeriodo(id) {
+        const accion = "¿Confirmar cambio de estado del período?";
+        if (!confirm(accion)) return;
+        try {
+          await patch(
+            `/maestrias/${maestriaSeleccionada}/periodos/${id}/estado`,
+            {},
+          );
+          await cargarPeriodos(maestriaSeleccionada);
+          mostrarAlerta(
+            document.getElementById("alertMaestrias"),
+            "Estado del período actualizado",
+            "success",
+          );
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertMaestrias"), err.message);
+        }
+      }
+    </script>
+  </body>
+</html>

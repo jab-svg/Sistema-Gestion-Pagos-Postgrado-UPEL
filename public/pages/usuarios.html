@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuarios — SGPP UPEL</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="../img/upel-banner.png" alt="UPEL" />
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-section">Navegación</div>
+          <a href="dashboard.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" /></svg
+            >Dashboard</a
+          >
+          <a href="maestrias.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              /></svg
+            >Maestrías</a
+          >
+          <a href="estudiantes.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+              /></svg
+            >Estudiantes</a
+          >
+          <a href="pagos.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+              /></svg
+            >Pagos</a
+          >
+          <a href="tasa.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Tasa BCV</a
+          >
+          <a href="reportes.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              /></svg
+            >Reportes</a
+          >
+          <a href="usuarios.html" class="nav-item active"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Usuarios</a
+          >
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-info">
+            <div class="user-avatar" id="userAvatar">A</div>
+            <div>
+              <div class="user-name" id="userName">Admin</div>
+              <div class="user-role" id="userRole">superadmin</div>
+            </div>
+          </div>
+          <a href="#" class="btn-logout" id="btnLogout">Cerrar sesión</a>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="topbar">
+          <div>
+            <div class="topbar-title">Gestión de Usuarios</div>
+            <div class="topbar-sub">Administración de accesos al sistema</div>
+          </div>
+          <div class="topbar-right">
+            <button class="btn btn-primary" id="btnNuevoUsuario">
+              <svg
+                width="13"
+                height="13"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+              Nuevo Usuario
+            </button>
+          </div>
+        </div>
+
+        <div class="content">
+          <div id="alertUsuarios"></div>
+          <div class="grid-2-1">
+            <!-- Lista -->
+            <div class="card">
+              <div class="card-title">Usuarios del Sistema</div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Usuario</th>
+                      <th>Rol</th>
+                      <th>Estado</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tablaUsuarios">
+                    <tr>
+                      <td
+                        colspan="5"
+                        style="text-align: center; color: var(--gray5)"
+                      >
+                        Cargando...
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Panel derecho -->
+            <div>
+              <!-- Formulario nuevo/editar -->
+              <div
+                class="card"
+                id="cardFormUsuario"
+                style="margin-bottom: 16px"
+              >
+                <div class="card-title" id="formUsuarioTitle">
+                  Nuevo Usuario
+                </div>
+                <div id="alertFormUsuario"></div>
+                <div class="form-group" style="margin-bottom: 12px">
+                  <label>Nombre Completo</label>
+                  <input
+                    type="text"
+                    id="uNombre"
+                    placeholder="Nombre y apellido"
+                  />
+                </div>
+                <div class="form-group" style="margin-bottom: 12px">
+                  <label>Nombre de Usuario</label>
+                  <input type="text" id="uUsername" placeholder="username" />
+                </div>
+                <div
+                  class="form-group"
+                  style="margin-bottom: 12px"
+                  id="campoPassword"
+                >
+                  <label>Contraseña</label>
+                  <input
+                    type="password"
+                    id="uPassword"
+                    placeholder="Mínimo 6 caracteres"
+                  />
+                </div>
+                <div class="form-group" style="margin-bottom: 18px">
+                  <label>Rol</label>
+                  <select id="uRol">
+                    <option value="admin">admin</option>
+                    <option value="superadmin">superadmin</option>
+                  </select>
+                </div>
+                <input type="hidden" id="editUsuarioId" />
+                <div style="display: flex; gap: 8px">
+                  <button
+                    class="btn btn-primary btn-full"
+                    id="btnGuardarUsuario"
+                  >
+                    Crear Usuario
+                  </button>
+                  <button
+                    class="btn btn-ghost"
+                    id="btnCancelarUsuario"
+                    style="display: none"
+                  >
+                    Cancelar
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cambiar contraseña -->
+              <div class="card" id="cardCambiarPass" style="display: none">
+                <div class="card-title">Cambiar Contraseña</div>
+                <div id="alertCambiarPass"></div>
+                <div class="form-group" style="margin-bottom: 12px">
+                  <label>Contraseña Actual</label>
+                  <input
+                    type="password"
+                    id="passActual"
+                    placeholder="••••••••"
+                  />
+                </div>
+                <div class="form-group" style="margin-bottom: 18px">
+                  <label>Nueva Contraseña</label>
+                  <input
+                    type="password"
+                    id="passNueva"
+                    placeholder="Mínimo 6 caracteres"
+                  />
+                </div>
+                <input type="hidden" id="cambiarPassUserId" />
+                <button class="btn btn-success btn-full" id="btnConfirmarPass">
+                  Cambiar Contraseña
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backup de base de datos -->
+          <div class="card" style="margin-top: 20px">
+            <div class="card-title">
+              <svg
+                width="15"
+                height="15"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7M4 7c0-2 1-3 3-3h10c2 0 3 1 3 3M4 7h16M10 11v6M14 11v6"
+                />
+              </svg>
+              Respaldo de Base de Datos
+            </div>
+            <div id="alertBackup"></div>
+            <div class="grid-2">
+              <div
+                style="
+                  background: var(--gray1);
+                  border: 1px solid var(--gray3);
+                  border-radius: 8px;
+                  padding: 20px;
+                "
+              >
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--gray8);
+                    margin-bottom: 6px;
+                  "
+                >
+                  Exportar Base de Datos
+                </div>
+                <div
+                  style="
+                    font-size: 0.83rem;
+                    color: var(--gray6);
+                    margin-bottom: 16px;
+                  "
+                >
+                  Descarga una copia completa de la base de datos. Guárdala en
+                  un lugar seguro como respaldo.
+                </div>
+                <button class="btn btn-primary" id="btnExportar">
+                  <svg
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                  Descargar Backup
+                </button>
+              </div>
+              <div
+                style="
+                  background: var(--gray1);
+                  border: 1px solid var(--gray3);
+                  border-radius: 8px;
+                  padding: 20px;
+                "
+              >
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--gray8);
+                    margin-bottom: 6px;
+                  "
+                >
+                  Importar Base de Datos
+                </div>
+                <div
+                  style="
+                    font-size: 0.83rem;
+                    color: var(--gray6);
+                    margin-bottom: 16px;
+                  "
+                >
+                  Restaura la base de datos desde un backup anterior.
+                  <strong style="color: var(--danger)"
+                    >Esta acción reemplaza todos los datos actuales.</strong
+                  >
+                </div>
+                <div style="margin-bottom: 12px">
+                  <input
+                    type="file"
+                    id="inputDB"
+                    accept=".db"
+                    style="display: none"
+                  />
+                  <label
+                    for="inputDB"
+                    class="btn btn-ghost"
+                    style="cursor: pointer"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"
+                      />
+                    </svg>
+                    Seleccionar archivo .db
+                  </label>
+                  <span
+                    id="nombreArchivo"
+                    style="
+                      font-size: 0.82rem;
+                      color: var(--gray5);
+                      margin-left: 10px;
+                    "
+                    >Ningún archivo seleccionado</span
+                  >
+                </div>
+                <button class="btn btn-danger" id="btnImportar" disabled>
+                  Restaurar Base de Datos
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script>
+      let usuarioEditando = null;
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        if (!verificarAuth()) return;
+        const u = getUsuario();
+        if (u) {
+          document.getElementById("userName").textContent = u.nombre;
+          document.getElementById("userRole").textContent = u.rol;
+          document.getElementById("userAvatar").textContent = u.nombre
+            .charAt(0)
+            .toUpperCase();
+        }
+        document.getElementById("btnLogout").addEventListener("click", (e) => {
+          e.preventDefault();
+          cerrarSesion();
+        });
+        await cargarUsuarios();
+        bindEventos();
+      });
+
+      async function cargarUsuarios() {
+        try {
+          const r = await get("/usuarios");
+          const tbody = document.getElementById("tablaUsuarios");
+          if (r.datos.length === 0) {
+            tbody.innerHTML =
+              '<tr><td colspan="5" style="text-align:center;color:var(--gray5)">Sin usuarios</td></tr>';
+            return;
+          }
+          tbody.innerHTML = r.datos
+            .map(
+              (u) => `
+            <tr>
+              <td>
+                <div style="display:flex;align-items:center;gap:8px">
+                  <div style="width:30px;height:30px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff;flex-shrink:0">${u.nombre.charAt(0).toUpperCase()}</div>
+                  <span style="font-weight:500">${u.nombre}</span>
+                </div>
+              </td>
+              <td style="font-family:monospace;font-size:.85rem">${u.username}</td>
+              <td><span class="badge ${u.rol === "superadmin" ? "badge-warn" : "badge-info"}">${u.rol}</span></td>
+              <td><span class="badge ${u.activo ? "badge-success" : "badge-gray"}">${u.activo ? "Activo" : "Inactivo"}</span></td>
+              <td style="display:flex;gap:5px;flex-wrap:wrap">
+                <button class="btn btn-ghost btn-sm" onclick="editarUsuario(${u.id},'${u.nombre.replace(/'/g, "\\'")}','${u.username}','${u.rol}')">Editar</button>
+                <button class="btn btn-outline btn-sm" onclick="mostrarCambiarPass(${u.id})">Contraseña</button>
+                <button class="btn btn-danger btn-sm" onclick="toggleEstado(${u.id})">${u.activo ? "Desactivar" : "Activar"}</button>
+              </td>
+            </tr>`,
+            )
+            .join("");
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertUsuarios"), err.message);
+        }
+      }
+
+      function bindEventos() {
+        document.getElementById("btnNuevoUsuario").onclick = resetForm;
+
+        document
+          .getElementById("btnGuardarUsuario")
+          .addEventListener("click", async () => {
+            const id = document.getElementById("editUsuarioId").value;
+            const nombre = document.getElementById("uNombre").value.trim();
+            const username = document.getElementById("uUsername").value.trim();
+            const password = document.getElementById("uPassword").value;
+            const rol = document.getElementById("uRol").value;
+            const alert = document.getElementById("alertFormUsuario");
+
+            try {
+              if (id) {
+                await put(`/usuarios/${id}`, { nombre, rol });
+              } else {
+                await post("/usuarios", { nombre, username, password, rol });
+              }
+              resetForm();
+              await cargarUsuarios();
+              mostrarAlerta(
+                document.getElementById("alertUsuarios"),
+                id ? "Usuario actualizado" : "Usuario creado correctamente",
+                "success",
+              );
+            } catch (err) {
+              mostrarAlerta(alert, err.message);
+            }
+          });
+
+        document
+          .getElementById("btnCancelarUsuario")
+          .addEventListener("click", resetForm);
+
+        document
+          .getElementById("btnConfirmarPass")
+          .addEventListener("click", async () => {
+            const id = document.getElementById("cambiarPassUserId").value;
+            const passwordActual = document.getElementById("passActual").value;
+            const passwordNueva = document.getElementById("passNueva").value;
+            const alert = document.getElementById("alertCambiarPass");
+            try {
+              await put(`/usuarios/${id}/password`, {
+                passwordActual,
+                passwordNueva,
+              });
+              document.getElementById("cardCambiarPass").style.display = "none";
+              mostrarAlerta(
+                document.getElementById("alertUsuarios"),
+                "Contraseña actualizada",
+                "success",
+              );
+            } catch (err) {
+              mostrarAlerta(alert, err.message);
+            }
+          });
+      }
+
+      function editarUsuario(id, nombre, username, rol) {
+        usuarioEditando = id;
+        document.getElementById("formUsuarioTitle").textContent =
+          "Editar Usuario";
+        document.getElementById("uNombre").value = nombre;
+        document.getElementById("uUsername").value = username;
+        document.getElementById("uRol").value = rol;
+        document.getElementById("editUsuarioId").value = id;
+        document.getElementById("campoPassword").style.display = "none";
+        document.getElementById("btnGuardarUsuario").textContent =
+          "Guardar Cambios";
+        document.getElementById("btnCancelarUsuario").style.display =
+          "inline-flex";
+        document.getElementById("cardCambiarPass").style.display = "none";
+      }
+
+      function mostrarCambiarPass(id) {
+        document.getElementById("cambiarPassUserId").value = id;
+        document.getElementById("passActual").value = "";
+        document.getElementById("passNueva").value = "";
+        document.getElementById("alertCambiarPass").innerHTML = "";
+        document.getElementById("cardCambiarPass").style.display = "block";
+      }
+
+      async function toggleEstado(id) {
+        if (!confirm("¿Confirmar cambio de estado?")) return;
+        try {
+          await patch(`/usuarios/${id}/estado`, {});
+          await cargarUsuarios();
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertUsuarios"), err.message);
+        }
+      }
+
+      function resetForm() {
+        usuarioEditando = null;
+        document.getElementById("formUsuarioTitle").textContent =
+          "Nuevo Usuario";
+        document.getElementById("uNombre").value = "";
+        document.getElementById("uUsername").value = "";
+        document.getElementById("uPassword").value = "";
+        document.getElementById("uRol").value = "admin";
+        document.getElementById("editUsuarioId").value = "";
+        document.getElementById("campoPassword").style.display = "block";
+        document.getElementById("btnGuardarUsuario").textContent =
+          "Crear Usuario";
+        document.getElementById("btnCancelarUsuario").style.display = "none";
+        document.getElementById("alertFormUsuario").innerHTML = "";
+        document.getElementById("cardCambiarPass").style.display = "none";
+      }
+
+      // ── Backup ────────────────────────────────────────────────
+      document.getElementById("btnExportar").addEventListener("click", () => {
+        const token = getToken();
+        fetch("/api/backup/exportar", {
+          headers: { Authorization: `Bearer ${token}` },
+        })
+          .then((res) => {
+            if (!res.ok) throw new Error("Error al exportar");
+            return res.blob();
+          })
+          .then((blob) => {
+            const fecha = new Date().toISOString().split("T")[0];
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = `sgpp_backup_${fecha}.db`;
+            a.click();
+            URL.revokeObjectURL(a.href);
+            mostrarAlerta(
+              document.getElementById("alertBackup"),
+              "Backup descargado correctamente",
+              "success",
+            );
+          })
+          .catch((err) =>
+            mostrarAlerta(document.getElementById("alertBackup"), err.message),
+          );
+      });
+
+      document.getElementById("inputDB").addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          document.getElementById("nombreArchivo").textContent = file.name;
+          document.getElementById("btnImportar").disabled = false;
+        }
+      });
+
+      document
+        .getElementById("btnImportar")
+        .addEventListener("click", async () => {
+          const file = document.getElementById("inputDB").files[0];
+          if (!file) return;
+
+          const confirmar = confirm(
+            "⚠️ ATENCIÓN\n\n" +
+              "Esta acción reemplazará TODOS los datos actuales con los del archivo seleccionado.\n\n" +
+              "¿Estás seguro de que deseas continuar?",
+          );
+          if (!confirmar) return;
+
+          const formData = new FormData();
+          formData.append("database", file);
+
+          try {
+            document.getElementById("btnImportar").disabled = true;
+            document.getElementById("btnImportar").textContent =
+              "Restaurando...";
+
+            const token = getToken();
+            const res = await fetch("/api/backup/importar", {
+              method: "POST",
+              headers: { Authorization: `Bearer ${token}` },
+              body: formData,
+            });
+            const data = await res.json();
+
+            if (!data.ok) throw new Error(data.mensaje);
+
+            mostrarAlerta(
+              document.getElementById("alertBackup"),
+              data.mensaje,
+              "success",
+            );
+
+            // Limpiar el input
+            document.getElementById("inputDB").value = "";
+            document.getElementById("nombreArchivo").textContent =
+              "Ningún archivo seleccionado";
+          } catch (err) {
+            mostrarAlerta(document.getElementById("alertBackup"), err.message);
+          } finally {
+            document.getElementById("btnImportar").disabled = false;
+            document.getElementById("btnImportar").textContent =
+              "Restaurar Base de Datos";
+          }
+        });
+    </script>
+  </body>
+</html>

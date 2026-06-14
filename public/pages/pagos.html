@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagos — SGPP UPEL</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="../img/upel-banner.png" alt="UPEL" />
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-section">Navegación</div>
+          <a href="dashboard.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" /></svg
+            >Dashboard</a
+          >
+          <a href="maestrias.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              /></svg
+            >Maestrías</a
+          >
+          <a href="estudiantes.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+              /></svg
+            >Estudiantes</a
+          >
+          <a href="pagos.html" class="nav-item active"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+              /></svg
+            >Pagos</a
+          >
+          <a href="tasa.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Tasa BCV</a
+          >
+          <a href="reportes.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              /></svg
+            >Reportes</a
+          >
+          <a href="usuarios.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Usuarios</a
+          >
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-info">
+            <div class="user-avatar" id="userAvatar">A</div>
+            <div>
+              <div class="user-name" id="userName">Admin</div>
+              <div class="user-role" id="userRole">superadmin</div>
+            </div>
+          </div>
+          <a href="#" class="btn-logout" id="btnLogout">Cerrar sesión</a>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="topbar">
+          <div>
+            <div class="topbar-title">Control de Pagos</div>
+            <div class="topbar-sub">Registro y gestión de cuotas</div>
+          </div>
+          <div class="topbar-right">
+            <button
+              class="btn btn-ghost btn-sm"
+              onclick="window.location.href = 'estudiantes.html'"
+            >
+              ← Volver a Estudiantes
+            </button>
+          </div>
+        </div>
+
+        <div class="content">
+          <div id="alertPagos"></div>
+
+          <!-- Buscar estudiante -->
+          <div class="card" style="margin-bottom: 20px" id="cardBuscar">
+            <div class="card-title">Buscar Estudiante</div>
+            <div style="display: flex; gap: 12px; align-items: flex-end">
+              <div class="form-group" style="flex: 1; margin: 0">
+                <label>Cédula de Identidad</label>
+                <input type="text" id="inputCI" placeholder="Ej: 12345678" />
+              </div>
+              <button class="btn btn-primary" id="btnBuscar">Buscar</button>
+            </div>
+          </div>
+
+          <!-- Info estudiante -->
+          <div id="seccionPagos" style="display: none">
+            <div class="card" style="margin-bottom: 20px">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  flex-wrap: wrap;
+                  gap: 16px;
+                "
+              >
+                <div>
+                  <div
+                    style="
+                      font-size: 0.72rem;
+                      color: var(--gray5);
+                      font-weight: 600;
+                      text-transform: uppercase;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Estudiante
+                  </div>
+                  <div
+                    style="font-size: 1.05rem; font-weight: 700"
+                    id="pagNombre"
+                  >
+                    —
+                  </div>
+                  <div
+                    style="
+                      font-size: 0.82rem;
+                      color: var(--gray5);
+                      margin-top: 2px;
+                    "
+                    id="pagInfo"
+                  >
+                    —
+                  </div>
+                  <div
+                    style="
+                      font-size: 0.82rem;
+                      color: var(--gray5);
+                      margin-top: 2px;
+                    "
+                    id="pagPeriodo"
+                  >
+                    —
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    gap: 24px;
+                    align-items: center;
+                    flex-wrap: wrap;
+                  "
+                >
+                  <div style="text-align: center">
+                    <div
+                      style="
+                        font-size: 0.72rem;
+                        color: var(--gray5);
+                        font-weight: 600;
+                        text-transform: uppercase;
+                      "
+                    >
+                      Costo Período
+                    </div>
+                    <div
+                      style="
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        color: var(--blue);
+                      "
+                      id="pagCosto"
+                    >
+                      —
+                    </div>
+                  </div>
+                  <div style="text-align: center">
+                    <div
+                      style="
+                        font-size: 0.72rem;
+                        color: var(--gray5);
+                        font-weight: 600;
+                        text-transform: uppercase;
+                      "
+                    >
+                      Pagado
+                    </div>
+                    <div
+                      style="
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        color: var(--green);
+                      "
+                      id="pagPagado"
+                    >
+                      —
+                    </div>
+                  </div>
+                  <div style="text-align: center">
+                    <div
+                      style="
+                        font-size: 0.72rem;
+                        color: var(--gray5);
+                        font-weight: 600;
+                        text-transform: uppercase;
+                      "
+                    >
+                      Pendiente
+                    </div>
+                    <div
+                      style="
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        color: var(--danger);
+                      "
+                      id="pagPendiente"
+                    >
+                      —
+                    </div>
+                  </div>
+                  <div id="pagEstado">—</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cuotas -->
+            <div class="card" style="margin-bottom: 20px">
+              <div class="card-title" style="justify-content: space-between">
+                <span>Detalle de Cuotas</span>
+                <button class="btn btn-primary btn-sm" id="btnNuevaCuota">
+                  <svg
+                    width="12"
+                    height="12"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                  Registrar Cuota
+                </button>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>N° Cuota</th>
+                      <th>Fecha</th>
+                      <th>Monto USD</th>
+                      <th>Monto Bs</th>
+                      <th>Tasa</th>
+                      <th>Referencia</th>
+                      <th>Estado</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tablaCuotas">
+                    <tr>
+                      <td
+                        colspan="8"
+                        style="text-align: center; color: var(--gray5)"
+                      >
+                        Sin cuotas registradas
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Auditoría -->
+            <div class="card" id="cardAuditoria" style="display: none">
+              <div class="card-title">Registro de Auditoría</div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Fecha</th>
+                      <th>Acción</th>
+                      <th>Motivo</th>
+                      <th>Usuario</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tablaAuditoria"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Modal registrar cuota -->
+    <div class="modal-overlay" id="modalCuota" style="display: none">
+      <div class="modal">
+        <div class="modal-title" id="modalCuotaTitle">Registrar Cuota</div>
+        <div id="alertModalCuota"></div>
+        <div
+          style="
+            background: var(--blue3);
+            border: 1px solid #90cdf4;
+            border-radius: 6px;
+            padding: 10px 14px;
+            margin-bottom: 16px;
+            font-size: 0.84rem;
+            color: var(--blue);
+          "
+        >
+          Tasa BCV vigente: <strong id="modalTasa">cargando...</strong> Bs/$
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>N° de Cuota</label>
+            <select id="cuotaNumero">
+              <option value="1">Cuota 1</option>
+              <option value="2">Cuota 2</option>
+              <option value="3">Cuota 3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Fecha de Pago</label>
+            <input type="date" id="cuotaFecha" />
+          </div>
+          <div class="form-group">
+            <label>Monto (USD)</label>
+            <input
+              type="number"
+              id="cuotaMonto"
+              step="0.01"
+              placeholder="0.00"
+            />
+          </div>
+          <div class="form-group">
+            <label>Equivalente en Bs (calculado)</label>
+            <input
+              type="text"
+              id="cuotaMontoBs"
+              readonly
+              style="background: var(--gray1); color: var(--gray6)"
+            />
+          </div>
+          <div class="form-group form-full">
+            <label>N° de Referencia Bancaria</label>
+            <input
+              type="text"
+              id="cuotaReferencia"
+              placeholder="Solo números"
+            />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-ghost" id="btnCancelarCuota">Cancelar</button>
+          <button class="btn btn-primary" id="btnGuardarCuota">
+            Registrar Pago
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal anular -->
+    <div class="modal-overlay" id="modalAnular" style="display: none">
+      <div class="modal">
+        <div class="modal-title">Anular Pago</div>
+        <div id="alertModalAnular"></div>
+        <div class="form-group">
+          <label>Motivo de Anulación</label>
+          <textarea
+            id="motivoAnular"
+            placeholder="Describe el motivo de la anulación..."
+          ></textarea>
+        </div>
+        <input type="hidden" id="anularCuotaId" />
+        <div class="modal-footer">
+          <button class="btn btn-ghost" id="btnCancelarAnular">Cancelar</button>
+          <button class="btn btn-danger" id="btnConfirmarAnular">
+            Confirmar Anulación
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal editar cuota -->
+    <div class="modal-overlay" id="modalEditar" style="display: none">
+      <div class="modal">
+        <div class="modal-title">Editar Cuota</div>
+        <div id="alertModalEditar"></div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Fecha de Pago</label>
+            <input type="date" id="editFecha" />
+          </div>
+          <div class="form-group">
+            <label>Monto (USD)</label>
+            <input type="number" id="editMonto" step="0.01" />
+          </div>
+          <div class="form-group form-full">
+            <label>N° de Referencia</label>
+            <input type="text" id="editReferencia" />
+          </div>
+          <div class="form-group form-full">
+            <label>Motivo de Edición</label>
+            <textarea
+              id="editMotivo"
+              placeholder="Describe el motivo de la edición..."
+            ></textarea>
+          </div>
+        </div>
+        <input type="hidden" id="editCuotaId" />
+        <div class="modal-footer">
+          <button class="btn btn-ghost" id="btnCancelarEditar">Cancelar</button>
+          <button class="btn btn-primary" id="btnConfirmarEditar">
+            Guardar Cambios
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script>
+      let inscripcionActual = null;
+      let tasaActual = null;
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        if (!verificarAuth()) return;
+        const u = getUsuario();
+        if (u) {
+          document.getElementById("userName").textContent = u.nombre;
+          document.getElementById("userRole").textContent = u.rol;
+          document.getElementById("userAvatar").textContent = u.nombre
+            .charAt(0)
+            .toUpperCase();
+        }
+        document.getElementById("btnLogout").addEventListener("click", (e) => {
+          e.preventDefault();
+          cerrarSesion();
+        });
+
+        // Cargar tasa
+        try {
+          const r = await get("/tasa/vigente");
+          tasaActual = r.datos.tasa_bs;
+        } catch {
+          /* sin tasa */
+        }
+
+        // Si viene desde estudiantes con inscripcion_id
+        const inscId = localStorage.getItem("sgpp_inscripcion");
+        if (inscId) {
+          localStorage.removeItem("sgpp_inscripcion");
+          await cargarPagos(inscId);
+        }
+
+        bindEventos();
+      });
+
+      function bindEventos() {
+        document
+          .getElementById("btnBuscar")
+          .addEventListener("click", async () => {
+            const ci = document.getElementById("inputCI").value.trim();
+            if (!ci) return;
+            try {
+              const r = await get(`/estudiantes/ci/${ci}`);
+              const insc = r.datos.inscripciones?.[0];
+              if (!insc) {
+                mostrarAlerta(
+                  document.getElementById("alertPagos"),
+                  "El estudiante no tiene inscripciones",
+                );
+                return;
+              }
+              await cargarPagos(insc.id);
+            } catch (err) {
+              mostrarAlerta(document.getElementById("alertPagos"), err.message);
+            }
+          });
+
+        document.getElementById("inputCI").addEventListener("keydown", (e) => {
+          if (e.key === "Enter") document.getElementById("btnBuscar").click();
+        });
+
+        // Modal cuota
+        document.getElementById("btnNuevaCuota").onclick = abrirModalCuota;
+        document.getElementById("btnCancelarCuota").onclick = () =>
+          cerrarModal("modalCuota");
+        document.getElementById("btnGuardarCuota").onclick = guardarCuota;
+
+        // Calcular Bs automáticamente
+        document.getElementById("cuotaMonto").addEventListener("input", (e) => {
+          const bs = tasaActual
+            ? (Number(e.target.value) * tasaActual).toFixed(2)
+            : "—";
+          document.getElementById("cuotaMontoBs").value = tasaActual
+            ? `Bs. ${bs}`
+            : "Sin tasa registrada";
+        });
+
+        // Modal anular
+        document.getElementById("btnCancelarAnular").onclick = () =>
+          cerrarModal("modalAnular");
+        document.getElementById("btnConfirmarAnular").onclick = confirmarAnular;
+
+        // Modal editar
+        document.getElementById("btnCancelarEditar").onclick = () =>
+          cerrarModal("modalEditar");
+        document.getElementById("btnConfirmarEditar").onclick = confirmarEditar;
+      }
+
+      async function cargarPagos(inscripcion_id) {
+        try {
+          const r = await get(`/pagos/inscripcion/${inscripcion_id}`);
+          inscripcionActual = r.datos;
+
+          // Cargar datos del alumno para mostrar nombre
+          const alumnoId = r.datos.inscripcion.alumno_id;
+          try {
+            const ra = await get(`/estudiantes/${alumnoId}`);
+            const a = ra.datos;
+            document.getElementById("pagNombre").textContent =
+              `${a.apellidos}, ${a.nombres}`;
+            document.getElementById("pagInfo").textContent =
+              `C.I. ${a.cedula} · ${a.maestria}`;
+
+            // Buscar el período
+            try {
+              const rp = await get(`/maestrias/${a.maestria_id}/periodos`);
+              const periodo = rp.datos.find(
+                (p) => p.id === r.datos.inscripcion.periodo_id,
+              );
+              document.getElementById("pagPeriodo").textContent = periodo
+                ? `Período: ${periodo.codigo}`
+                : `Período ID: ${r.datos.inscripcion.periodo_id}`;
+            } catch {
+              /* silencioso */
+            }
+          } catch {
+            /* silencioso */
+          }
+
+          renderPagos(r.datos);
+          document.getElementById("seccionPagos").style.display = "block";
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertPagos"), err.message);
+        }
+      }
+
+      function renderPagos(datos) {
+        const i = datos.inscripcion;
+        const pendiente = i.costo_aplicado - i.total_pagado;
+
+        document.getElementById("pagCosto").textContent = formatUSD(
+          i.costo_aplicado,
+        );
+        document.getElementById("pagPagado").textContent = formatUSD(
+          i.total_pagado,
+        );
+        document.getElementById("pagPendiente").textContent = formatUSD(
+          pendiente < 0 ? 0 : pendiente,
+        );
+        document.getElementById("pagEstado").innerHTML = badgeEstadoGrande(
+          i.estado,
+        );
+
+        // Cuotas
+        const tbody = document.getElementById("tablaCuotas");
+        if (datos.cuotas.length === 0) {
+          tbody.innerHTML =
+            '<tr><td colspan="8" style="text-align:center;color:var(--gray5)">Sin cuotas registradas</td></tr>';
+        } else {
+          tbody.innerHTML = datos.cuotas
+            .map(
+              (c) => `
+            <tr style="${c.estado === "ANULADO" ? "opacity:.5;text-decoration:line-through" : ""}">
+              <td style="font-weight:600;color:var(--blue)">Cuota ${c.numero}</td>
+              <td>${formatFecha(c.fecha_pago)}</td>
+              <td style="font-weight:500">${formatUSD(c.monto_usd)}</td>
+              <td style="color:var(--gray6);font-size:.85rem">${formatBS(c.monto_bs)}</td>
+              <td style="color:var(--gray5);font-size:.82rem">${c.tasa_bs}</td>
+              <td style="font-family:monospace;font-size:.82rem">${c.referencia}</td>
+              <td>${badgeEstadoCuota(c.estado)}</td>
+              <td style="display:flex;gap:5px">
+                ${
+                  c.estado !== "ANULADO"
+                    ? `
+                  <button class="btn btn-ghost btn-sm" onclick="abrirEditar(${c.id},'${c.fecha_pago}',${c.monto_usd},'${c.referencia}')">Editar</button>
+                  <button class="btn btn-danger btn-sm" onclick="abrirAnular(${c.id})">Anular</button>
+                `
+                    : '<span style="font-size:.78rem;color:var(--gray5)">Anulado</span>'
+                }
+              </td>
+            </tr>`,
+            )
+            .join("");
+        }
+
+        // Auditoría
+        if (datos.auditoria.length > 0) {
+          document.getElementById("cardAuditoria").style.display = "block";
+          document.getElementById("tablaAuditoria").innerHTML = datos.auditoria
+            .map(
+              (a) => `
+            <tr>
+              <td style="font-size:.82rem">${formatFecha(a.fecha)}</td>
+              <td><span class="badge ${a.accion === "ANULACION" ? "badge-danger" : "badge-warn"}">${a.accion}</span></td>
+              <td style="font-size:.85rem">${a.motivo}</td>
+              <td style="font-size:.82rem;color:var(--gray5)">${a.usuario}</td>
+            </tr>`,
+            )
+            .join("");
+        }
+      }
+
+      function badgeEstadoGrande(estado) {
+        const map = {
+          SOLVENTE:
+            '<span class="badge badge-success" style="font-size:.9rem;padding:6px 16px">✓ SOLVENTE</span>',
+          PAGADO_PARCIAL:
+            '<span class="badge badge-warn"    style="font-size:.9rem;padding:6px 16px">PAGO PARCIAL</span>',
+          PENDIENTE:
+            '<span class="badge badge-danger"  style="font-size:.9rem;padding:6px 16px">INSOLVENTE</span>',
+        };
+        return map[estado] || estado;
+      }
+
+      function badgeEstadoCuota(estado) {
+        const map = {
+          PAGADO: '<span class="badge badge-success">Pagado</span>',
+          ANULADO: '<span class="badge badge-danger">Anulado</span>',
+          PENDIENTE: '<span class="badge badge-warn">Pendiente</span>',
+        };
+        return map[estado] || estado;
+      }
+
+      function abrirModalCuota() {
+        document.getElementById("cuotaFecha").value = new Date()
+          .toISOString()
+          .split("T")[0];
+        document.getElementById("cuotaMonto").value = "";
+        document.getElementById("cuotaMontoBs").value = "";
+        document.getElementById("cuotaReferencia").value = "";
+        document.getElementById("modalTasa").textContent =
+          tasaActual || "No registrada";
+        document.getElementById("alertModalCuota").innerHTML = "";
+        document.getElementById("modalCuota").style.display = "flex";
+      }
+
+      async function guardarCuota() {
+        const alert = document.getElementById("alertModalCuota");
+        const payload = {
+          inscripcion_id: inscripcionActual.inscripcion.id,
+          numero: document.getElementById("cuotaNumero").value,
+          fecha_pago: document.getElementById("cuotaFecha").value,
+          monto_usd: document.getElementById("cuotaMonto").value,
+          referencia: document.getElementById("cuotaReferencia").value.trim(),
+        };
+        try {
+          await post("/pagos", payload);
+          cerrarModal("modalCuota");
+          await cargarPagos(inscripcionActual.inscripcion.id);
+          mostrarAlerta(
+            document.getElementById("alertPagos"),
+            "Pago registrado correctamente",
+            "success",
+          );
+        } catch (err) {
+          mostrarAlerta(alert, err.message);
+        }
+      }
+
+      function abrirAnular(id) {
+        document.getElementById("motivoAnular").value = "";
+        document.getElementById("anularCuotaId").value = id;
+        document.getElementById("alertModalAnular").innerHTML = "";
+        document.getElementById("modalAnular").style.display = "flex";
+      }
+
+      async function confirmarAnular() {
+        const id = document.getElementById("anularCuotaId").value;
+        const motivo = document.getElementById("motivoAnular").value.trim();
+        const alert = document.getElementById("alertModalAnular");
+        if (!motivo) {
+          mostrarAlerta(alert, "El motivo es requerido");
+          return;
+        }
+        try {
+          await patch(`/pagos/${id}/anular`, { motivo });
+          cerrarModal("modalAnular");
+          await cargarPagos(inscripcionActual.inscripcion.id);
+          mostrarAlerta(
+            document.getElementById("alertPagos"),
+            "Pago anulado correctamente",
+            "success",
+          );
+        } catch (err) {
+          mostrarAlerta(alert, err.message);
+        }
+      }
+
+      function abrirEditar(id, fecha, monto, referencia) {
+        document.getElementById("editCuotaId").value = id;
+        document.getElementById("editFecha").value = fecha;
+        document.getElementById("editMonto").value = monto;
+        document.getElementById("editReferencia").value = referencia;
+        document.getElementById("editMotivo").value = "";
+        document.getElementById("alertModalEditar").innerHTML = "";
+        document.getElementById("modalEditar").style.display = "flex";
+      }
+
+      async function confirmarEditar() {
+        const id = document.getElementById("editCuotaId").value;
+        const alert = document.getElementById("alertModalEditar");
+        const payload = {
+          fecha_pago: document.getElementById("editFecha").value,
+          monto_usd: document.getElementById("editMonto").value,
+          referencia: document.getElementById("editReferencia").value.trim(),
+          motivo: document.getElementById("editMotivo").value.trim(),
+        };
+        try {
+          await put(`/pagos/${id}`, payload);
+          cerrarModal("modalEditar");
+          await cargarPagos(inscripcionActual.inscripcion.id);
+          mostrarAlerta(
+            document.getElementById("alertPagos"),
+            "Pago editado correctamente",
+            "success",
+          );
+        } catch (err) {
+          mostrarAlerta(alert, err.message);
+        }
+      }
+
+      function cerrarModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+    </script>
+  </body>
+</html>

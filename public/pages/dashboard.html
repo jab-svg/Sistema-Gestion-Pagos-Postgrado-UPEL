@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — SGPP UPEL</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="../img/upel-banner.png" alt="UPEL" />
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-section">Navegación</div>
+          <a href="dashboard.html" class="nav-item active">
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+            </svg>
+            Dashboard
+          </a>
+          <a href="maestrias.html" class="nav-item">
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              />
+            </svg>
+            Maestrías
+          </a>
+          <a href="estudiantes.html" class="nav-item">
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+            Estudiantes
+          </a>
+          <a href="pagos.html" class="nav-item">
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+            Pagos
+          </a>
+          <a href="tasa.html" class="nav-item">
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            Tasa BCV
+          </a>
+          <a href="reportes.html" class="nav-item">
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+            Reportes
+          </a>
+          <a href="usuarios.html" class="nav-item">
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            Usuarios
+          </a>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-info">
+            <div class="user-avatar" id="userAvatar">A</div>
+            <div>
+              <div class="user-name" id="userName">Administrador</div>
+              <div class="user-role" id="userRole">superadmin</div>
+            </div>
+          </div>
+          <a href="#" class="btn-logout" id="btnLogout">Cerrar sesión</a>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="main">
+        <div class="topbar">
+          <div>
+            <div class="topbar-title">Dashboard</div>
+            <div class="topbar-sub">Resumen general del sistema</div>
+          </div>
+          <div class="topbar-right">
+            <span style="font-size: 0.8rem; color: var(--gray6)"
+              >Tasa BCV:</span
+            >
+            <span
+              id="tasaActual"
+              style="font-size: 0.85rem; font-weight: 600; color: var(--blue)"
+              >cargando...</span
+            >
+          </div>
+        </div>
+
+        <div class="content">
+          <div id="alertDash"></div>
+
+          <!-- Stats -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-label">Estudiantes</div>
+              <div class="stat-value" id="statEstudiantes">—</div>
+              <div class="stat-sub">registrados en el sistema</div>
+            </div>
+            <div class="stat-card green">
+              <div class="stat-label">Solventes</div>
+              <div
+                class="stat-value"
+                id="statSolventes"
+                style="color: var(--green)"
+              >
+                —
+              </div>
+              <div class="stat-sub">pago completo</div>
+            </div>
+            <div class="stat-card red">
+              <div class="stat-label">Insolventes</div>
+              <div
+                class="stat-value"
+                id="statInsolventes"
+                style="color: var(--danger)"
+              >
+                —
+              </div>
+              <div class="stat-sub">con saldo pendiente</div>
+            </div>
+            <div class="stat-card gold">
+              <div class="stat-label">Maestrías Activas</div>
+              <div class="stat-value" id="statMaestrias">—</div>
+              <div class="stat-sub">programas activos</div>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <!-- Últimos pagos -->
+            <div class="card">
+              <div class="card-title">
+                <svg
+                  width="15"
+                  height="15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                  />
+                </svg>
+                Maestrías Registradas
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Maestría</th>
+                      <th>Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tablaMaestrias">
+                    <tr>
+                      <td
+                        colspan="2"
+                        style="text-align: center; color: var(--gray5)"
+                      >
+                        Cargando...
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="margin-top: 14px">
+                <a href="maestrias.html" class="btn btn-outline btn-sm"
+                  >Ver maestrías →</a
+                >
+              </div>
+            </div>
+
+            <!-- Accesos rápidos -->
+            <div class="card">
+              <div class="card-title">
+                <svg
+                  width="15"
+                  height="15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+                Accesos Rápidos
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 10px">
+                <a href="estudiantes.html" class="btn btn-primary">
+                  <svg
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                  Registrar Estudiante
+                </a>
+                <a href="pagos.html" class="btn btn-success">
+                  <svg
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                  Registrar Pago
+                </a>
+                <a href="tasa.html" class="btn btn-outline">
+                  <svg
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                    />
+                  </svg>
+                  Actualizar Tasa BCV
+                </a>
+                <a href="reportes.html" class="btn btn-ghost">
+                  <svg
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                  Generar Reporte
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        if (!verificarAuth()) return;
+
+        // Info usuario
+        const u = getUsuario();
+        if (u) {
+          document.getElementById("userName").textContent = u.nombre;
+          document.getElementById("userRole").textContent = u.rol;
+          document.getElementById("userAvatar").textContent = u.nombre
+            .charAt(0)
+            .toUpperCase();
+        }
+
+        document.getElementById("btnLogout").addEventListener("click", (e) => {
+          e.preventDefault();
+          cerrarSesion();
+        });
+
+        // Cargar tasa
+        try {
+          const r = await get("/tasa/vigente");
+          document.getElementById("tasaActual").textContent =
+            `Bs. ${r.datos.tasa_bs}`;
+        } catch {
+          document.getElementById("tasaActual").textContent = "Sin tasa";
+        }
+
+        // Cargar maestrías
+        try {
+          const r = await get("/maestrias");
+          const activas = r.datos.filter((m) => m.activa);
+          document.getElementById("statMaestrias").textContent = activas.length;
+
+          const tbody = document.getElementById("tablaMaestrias");
+          if (r.datos.length === 0) {
+            tbody.innerHTML =
+              '<tr><td colspan="2" style="text-align:center;color:var(--gray5)">Sin maestrías registradas</td></tr>';
+          } else {
+            tbody.innerHTML = r.datos
+              .map(
+                (m) => `
+                <tr>
+                  <td>${m.nombre}</td>
+                  <td><span class="badge ${m.activa ? "badge-success" : "badge-gray"}">${m.activa ? "Activa" : "Inactiva"}</span></td>
+                </tr>`,
+              )
+              .join("");
+          }
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertDash"), err.message);
+        }
+
+        // Cargar estudiantes
+        try {
+          const r = await get("/estudiantes");
+          const total = r.datos.length;
+          const solventes = r.datos.filter(
+            (e) => e.estado === "SOLVENTE",
+          ).length;
+          const insolventes = total - solventes;
+          document.getElementById("statEstudiantes").textContent = total;
+          document.getElementById("statSolventes").textContent = solventes;
+          document.getElementById("statInsolventes").textContent = insolventes;
+        } catch {
+          /* silencioso */
+        }
+      });
+    </script>
+  </body>
+</html>

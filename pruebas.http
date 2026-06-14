@@ -1,0 +1,177 @@
+### Login correcto
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin123"
+}
+
+### Login incorrecto
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "wrongpassword"
+}
+
+### --------------------------------------------Listar usuarios (requiere token)
+GET http://localhost:3000/api/usuarios
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+### Crear usuario
+POST http://localhost:3000/api/usuarios
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+Content-Type: application/json
+
+{
+    "nombre":   "Juan Pérez",
+    "username": "jperez",
+    "password": "123456",
+    "rol":      "admin"
+}
+
+### Desactivar usuario (cambia el 2 por el id real)
+PATCH http://localhost:3000/api/usuarios/2/estado
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+
+####-----------------------------------------------------------------prueba maestria
+### Crear maestría
+POST http://localhost:3000/api/maestrias
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+Content-Type: application/json
+
+{
+    "nombre": "Innovación Educativa"
+}
+
+### Listar maestrías
+GET http://localhost:3000/api/maestrias
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+### Crear período
+POST http://localhost:3000/api/maestrias/4/periodos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+Content-Type: application/json
+
+{
+    "codigo":    "2026-1",
+    "costo_usd": 50.00
+}
+
+### Listar períodos de una maestría
+GET http://localhost:3000/api/maestrias/1/periodos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+### -----------------------------------------------------------------------Registrar estudiante
+POST http://localhost:3000/api/estudiantes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+Content-Type: application/json
+
+{
+    "cedula":      "12345678",
+    "nombres":     "Luis Antonio",
+    "apellidos":   "García López",
+    "telefono":    "04141234567",
+    "email":       "luis@email.com",
+    "maestria_id": 1,
+    "periodo_id":  1
+}
+
+### Buscar por CI
+GET http://localhost:3000/api/estudiantes/ci/12345678
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+### Listar todos
+GET http://localhost:3000/api/estudiantes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+### Listar con filtro
+GET http://localhost:3000/api/estudiantes?busqueda=garcia
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+### ---------------------------------------------Obtener tasa desde BCV automáticamente
+POST http://localhost:3000/api/tasa/bcv
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+### Registrar tasa manual
+POST http://localhost:3000/api/tasa/manual
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+Content-Type: application/json
+
+{
+    "tasa_bs": 36.58,
+    "nota":    "Fuente BCV consultada manualmente"
+}
+
+### Ver tasa vigente
+GET http://localhost:3000/api/tasa/vigente
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+### Ver historial
+GET http://localhost:3000/api/tasa/historial
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+
+
+### ------------------------------------------------------------------Registrar pago — cuota 1
+POST http://localhost:3000/api/pagos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+Content-Type: application/json
+
+{
+    "inscripcion_id": 1,
+    "numero":         1,
+    "fecha_pago":     "2026-04-29",
+    "monto_usd":      25.00,
+    "referencia":     "00112233425"
+}
+
+### Ver cuotas de una inscripción
+GET http://localhost:3000/api/pagos/inscripcion/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+### Anular pago
+PATCH http://localhost:3000/api/pagos/1/anular
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+Content-Type: application/json
+
+{
+    "motivo": "Error en el número de referencia"
+}
+
+### Editar pago
+PUT http://localhost:3000/api/pagos/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+Content-Type: application/json
+
+{
+    "fecha_pago":  "2026-04-29",
+    "monto_usd":   30.00,
+    "referencia":  "00112233425",
+    "motivo":      "Corrección del monto"
+}
+
+### Reporte por maestría
+GET http://localhost:3000/api/reportes/maestria/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+### Reporte por maestría filtrando período
+GET http://localhost:3000/api/reportes/maestria/1?periodo_id=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+### Reporte por estudiante
+GET http://localhost:3000/api/reportes/estudiante/12345678
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+###prueba periodo nuevo
+POST http://localhost:3000/api/maestrias/2/periodos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibm9tYnJlIjoiQWRtaW5pc3RyYWRvciIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2wiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzc3OTI0ODc2LCJleHAiOjE3Nzc5NTM2NzZ9.KPtOEMdBlPDleFBap7PQ81ektYmFvmFkgqfeq8rCi-8
+
+{
+  "codigo": "2026-1",
+  "costo_usd": 50
+}

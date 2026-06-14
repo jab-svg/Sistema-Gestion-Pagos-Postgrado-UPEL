@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reportes — SGPP UPEL</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="../img/upel-banner.png" alt="UPEL" />
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-section">Navegación</div>
+          <a href="dashboard.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" /></svg
+            >Dashboard</a
+          >
+          <a href="maestrias.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              /></svg
+            >Maestrías</a
+          >
+          <a href="estudiantes.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+              /></svg
+            >Estudiantes</a
+          >
+          <a href="pagos.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+              /></svg
+            >Pagos</a
+          >
+          <a href="tasa.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Tasa BCV</a
+          >
+          <a href="reportes.html" class="nav-item active"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              /></svg
+            >Reportes</a
+          >
+          <a href="usuarios.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Usuarios</a
+          >
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-info">
+            <div class="user-avatar" id="userAvatar">A</div>
+            <div>
+              <div class="user-name" id="userName">Admin</div>
+              <div class="user-role" id="userRole">superadmin</div>
+            </div>
+          </div>
+          <a href="#" class="btn-logout" id="btnLogout">Cerrar sesión</a>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="topbar">
+          <div>
+            <div class="topbar-title">Generación de Reportes</div>
+            <div class="topbar-sub">Exportar reportes de pagos en PDF</div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div id="alertReportes"></div>
+          <div class="grid-2">
+            <!-- Por maestría -->
+            <div class="card">
+              <div class="card-title">
+                <svg
+                  width="15"
+                  height="15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+                Reporte por Maestría
+              </div>
+              <div class="form-group" style="margin-bottom: 14px">
+                <label>Seleccionar Maestría</label>
+                <select id="rptMaestria"></select>
+              </div>
+              <div class="form-group" style="margin-bottom: 20px">
+                <label>Período (opcional)</label>
+                <select id="rptPeriodo">
+                  <option value="">Todos los períodos</option>
+                </select>
+              </div>
+              <div
+                style="
+                  background: var(--gray1);
+                  border: 1px solid var(--gray3);
+                  border-radius: 6px;
+                  padding: 12px;
+                  margin-bottom: 18px;
+                  font-size: 0.82rem;
+                  color: var(--gray6);
+                "
+              >
+                Incluye: datos del estudiante, cuotas pagadas con fechas, montos
+                USD y Bs, y total general de la maestría.
+              </div>
+              <button
+                class="btn btn-primary btn-full"
+                id="btnDescargarMaestria"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                Descargar PDF
+              </button>
+            </div>
+
+            <!-- Por estudiante -->
+            <div class="card">
+              <div class="card-title">
+                <svg
+                  width="15"
+                  height="15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  />
+                </svg>
+                Reporte por Estudiante
+              </div>
+              <div class="form-group" style="margin-bottom: 14px">
+                <label>Cédula de Identidad</label>
+                <div style="display: flex; gap: 8px">
+                  <input
+                    type="text"
+                    id="rptCI"
+                    placeholder="Ej: 12345678"
+                    style="
+                      flex: 1;
+                      padding: 9px 12px;
+                      border: 1px solid var(--gray4);
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                      outline: none;
+                    "
+                  />
+                  <button class="btn btn-ghost" id="btnBuscarRpt">
+                    Buscar
+                  </button>
+                </div>
+              </div>
+              <div
+                id="previewEstudiante"
+                style="
+                  display: none;
+                  background: var(--gray1);
+                  border: 1px solid var(--gray3);
+                  border-radius: 6px;
+                  padding: 14px;
+                  margin-bottom: 14px;
+                "
+              >
+                <div
+                  style="
+                    font-size: 0.72rem;
+                    color: var(--gray5);
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin-bottom: 6px;
+                  "
+                >
+                  Vista previa
+                </div>
+                <div style="font-weight: 600" id="rptNombre">—</div>
+                <div
+                  style="
+                    font-size: 0.82rem;
+                    color: var(--gray6);
+                    margin-top: 2px;
+                  "
+                  id="rptDetalle"
+                >
+                  —
+                </div>
+              </div>
+              <div
+                style="
+                  background: var(--gray1);
+                  border: 1px solid var(--gray3);
+                  border-radius: 6px;
+                  padding: 12px;
+                  margin-bottom: 18px;
+                  font-size: 0.82rem;
+                  color: var(--gray6);
+                "
+              >
+                Incluye: datos personales, maestría, período, detalle de cuotas
+                y constancia de solvencia.
+              </div>
+              <button
+                class="btn btn-primary btn-full"
+                id="btnDescargarEstudiante"
+                disabled
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                Descargar PDF
+              </button>
+            </div>
+          </div>
+          <!-- Resumen por período -->
+          <div class="card" style="margin-top: 20px">
+            <div class="card-title">
+              <svg
+                width="15"
+                height="15"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              Resumen General de Ingresos por Período
+            </div>
+            <div
+              style="
+                display: flex;
+                gap: 12px;
+                align-items: flex-end;
+                margin-bottom: 16px;
+              "
+            >
+              <div class="form-group" style="flex: 1; margin: 0">
+                <label>Seleccionar Período</label>
+                <select id="rptPeriodoResumen">
+                  <option value="">Seleccionar período...</option>
+                </select>
+              </div>
+              <button class="btn btn-success" id="btnDescargarResumen" disabled>
+                <svg
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                Descargar Resumen PDF
+              </button>
+            </div>
+            <div
+              style="
+                font-size: 0.82rem;
+                color: var(--gray6);
+                background: var(--gray1);
+                border: 1px solid var(--gray3);
+                border-radius: 6px;
+                padding: 12px;
+              "
+            >
+              Genera un resumen consolidado de todas las maestrías en el período
+              seleccionado — total de estudiantes, monto recaudado y monto
+              pendiente por programa.
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script>
+      let cedulaSeleccionada = null;
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        if (!verificarAuth()) return;
+        const u = getUsuario();
+        if (u) {
+          document.getElementById("userName").textContent = u.nombre;
+          document.getElementById("userRole").textContent = u.rol;
+          document.getElementById("userAvatar").textContent = u.nombre
+            .charAt(0)
+            .toUpperCase();
+        }
+        document.getElementById("btnLogout").addEventListener("click", (e) => {
+          e.preventDefault();
+          cerrarSesion();
+        });
+
+        await cargarMaestrias();
+        bindEventos();
+        await cargarPeriodosResumen(); // ← llamada aquí dentro
+      });
+
+      // ── función 1 — independiente ─────────────────────────────
+      async function cargarMaestrias() {
+        try {
+          const r = await get("/maestrias");
+          poblarSelect(
+            document.getElementById("rptMaestria"),
+            r.datos.filter((m) => m.activa),
+            "id",
+            "nombre",
+          );
+          document
+            .getElementById("rptMaestria")
+            .addEventListener("change", async (e) => {
+              const mId = e.target.value;
+              const sel = document.getElementById("rptPeriodo");
+              sel.innerHTML = '<option value="">Todos los períodos</option>';
+              if (!mId) return;
+              try {
+                const r2 = await get(`/maestrias/${mId}/periodos`);
+                r2.datos.forEach((p) => {
+                  const opt = document.createElement("option");
+                  opt.value = p.id;
+                  opt.textContent = p.codigo;
+                  sel.appendChild(opt);
+                });
+              } catch {
+                /* silencioso */
+              }
+            });
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertReportes"), err.message);
+        }
+      }
+
+      // ── función 2 — independiente ─────────────────────────────
+      function bindEventos() {
+        document
+          .getElementById("btnBuscarRpt")
+          .addEventListener("click", async () => {
+            const ci = document.getElementById("rptCI").value.trim();
+            if (!ci) return;
+            try {
+              const r = await get(`/estudiantes/ci/${ci}`);
+              const d = r.datos;
+              const insc = d.inscripciones?.[0];
+              cedulaSeleccionada = ci;
+              document.getElementById("rptNombre").textContent =
+                `${d.apellidos}, ${d.nombres}`;
+              document.getElementById("rptDetalle").textContent = insc
+                ? `${d.maestria} · Período ${insc.periodo} · Pagado: ${formatUSD(insc.total_pagado)}`
+                : d.maestria;
+              document.getElementById("previewEstudiante").style.display =
+                "block";
+              document.getElementById("btnDescargarEstudiante").disabled =
+                false;
+            } catch (err) {
+              mostrarAlerta(
+                document.getElementById("alertReportes"),
+                err.message,
+              );
+              cedulaSeleccionada = null;
+              document.getElementById("btnDescargarEstudiante").disabled = true;
+              document.getElementById("previewEstudiante").style.display =
+                "none";
+            }
+          });
+
+        document
+          .getElementById("btnDescargarMaestria")
+          .addEventListener("click", () => {
+            const mId = document.getElementById("rptMaestria").value;
+            const periodoId = document.getElementById("rptPeriodo").value;
+            if (!mId) {
+              mostrarAlerta(
+                document.getElementById("alertReportes"),
+                "Selecciona una maestría",
+              );
+              return;
+            }
+            const fecha = new Date().toISOString().split("T")[0];
+            const url = `/api/reportes/maestria/${mId}${periodoId ? `?periodo_id=${periodoId}` : ""}`;
+            descargarConToken(url, getToken(), `reporte_maestria_${fecha}.pdf`);
+          });
+
+        document
+          .getElementById("btnDescargarEstudiante")
+          .addEventListener("click", () => {
+            if (!cedulaSeleccionada) return;
+            const fecha = new Date().toISOString().split("T")[0];
+            descargarConToken(
+              `/api/reportes/estudiante/${cedulaSeleccionada}`,
+              getToken(),
+              `reporte_${cedulaSeleccionada}_${fecha}.pdf`,
+            );
+          });
+      }
+
+      // ── función 3 — independiente ─────────────────────────────
+      async function cargarPeriodosResumen() {
+        try {
+          const r = await get("/maestrias");
+          const sel = document.getElementById("rptPeriodoResumen");
+          const periodos = new Map();
+
+          for (const m of r.datos) {
+            const rp = await get(`/maestrias/${m.id}/periodos`);
+            rp.datos.forEach((p) => {
+              if (!periodos.has(p.id)) {
+                periodos.set(p.id, p.codigo);
+              }
+            });
+          }
+
+          periodos.forEach((codigo, id) => {
+            const opt = document.createElement("option");
+            opt.value = id;
+            opt.textContent = codigo;
+            sel.appendChild(opt);
+          });
+
+          sel.addEventListener("change", () => {
+            document.getElementById("btnDescargarResumen").disabled =
+              !sel.value;
+          });
+
+          document
+            .getElementById("btnDescargarResumen")
+            .addEventListener("click", () => {
+              const pid = sel.value;
+              if (!pid) return;
+              const codigo = sel.options[sel.selectedIndex].text;
+              descargarConToken(
+                `/api/reportes/resumen/${pid}`,
+                getToken(),
+                `resumen_periodo_${codigo}.pdf`,
+              );
+            });
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertReportes"), err.message);
+        }
+      }
+
+      // ── helper descarga ───────────────────────────────────────
+      function descargarConToken(url, token, nombreArchivo) {
+        fetch(url, { headers: { Authorization: `Bearer ${token}` } })
+          .then((res) => {
+            if (!res.ok)
+              return res.json().then((d) => {
+                throw new Error(d.mensaje);
+              });
+            return res.blob();
+          })
+          .then((blob) => {
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = nombreArchivo;
+            a.click();
+            URL.revokeObjectURL(a.href);
+          })
+          .catch((err) =>
+            mostrarAlerta(
+              document.getElementById("alertReportes"),
+              err.message,
+            ),
+          );
+      }
+    </script>
+  </body>
+</html>

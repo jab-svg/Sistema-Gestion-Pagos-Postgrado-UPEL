@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGPP UPEL — Iniciar Sesión</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      body {
+        background: linear-gradient(
+          135deg,
+          #1a365d 0%,
+          #2b6cb0 50%,
+          #276749 100%
+        );
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .login-wrap {
+        width: 420px;
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+      }
+      .login-header {
+        background: #fff;
+        padding: 28px 36px 20px;
+        text-align: center;
+        border-bottom: 3px solid var(--blue);
+      }
+      .login-header img {
+        height: 80px;
+        width: auto;
+        margin-bottom: 12px;
+      }
+      .login-header h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--blue);
+        letter-spacing: 0.5px;
+      }
+      .login-header p {
+        font-size: 0.76rem;
+        color: var(--gray6);
+        margin-top: 3px;
+      }
+      .login-body {
+        padding: 28px 36px 32px;
+      }
+      .login-body .form-group {
+        margin-bottom: 16px;
+      }
+      .input-wrap {
+        position: relative;
+      }
+      .input-wrap svg {
+        position: absolute;
+        left: 11px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--gray5);
+      }
+      .input-wrap input {
+        width: 100%;
+        padding: 10px 12px 10px 36px;
+        border: 1px solid var(--gray4);
+        border-radius: 6px;
+        font-size: 0.92rem;
+        outline: none;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+      }
+      .input-wrap input:focus {
+        border-color: var(--blue);
+        box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.12);
+      }
+      #btnLogin {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(135deg, var(--blue) 0%, var(--blue2) 100%);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 8px;
+        transition: opacity 0.2s;
+      }
+      #btnLogin:hover {
+        opacity: 0.92;
+      }
+      #btnLogin:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+      .login-footer {
+        text-align: center;
+        padding: 14px;
+        background: var(--gray1);
+        border-top: 1px solid var(--gray3);
+        font-size: 0.72rem;
+        color: var(--gray5);
+      }
+      .login-footer span {
+        color: var(--green);
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-wrap">
+      <div class="login-header">
+        <img src="img/upel-logo.png" alt="UPEL" />
+        <h2>Sistema de Gestión de Pagos</h2>
+        <p>Estudios de Postgrado — Extensión Maracaibo</p>
+      </div>
+      <div class="login-body">
+        <div id="loginAlert"></div>
+        <form id="loginForm">
+          <div class="form-group">
+            <label>Usuario</label>
+            <div class="input-wrap">
+              <svg
+                width="15"
+                height="15"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+              </svg>
+              <input
+                id="usuario"
+                type="text"
+                placeholder="Nombre de usuario"
+                autocomplete="username"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Contraseña</label>
+            <div class="input-wrap">
+              <svg
+                width="15"
+                height="15"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              <input
+                id="password"
+                type="password"
+                placeholder="••••••••"
+                autocomplete="current-password"
+              />
+            </div>
+          </div>
+          <button type="submit" id="btnLogin">Iniciar sesión</button>
+        </form>
+      </div>
+      <div class="login-footer">
+        <span>UPEL</span> · Universidad Pedagógica Experimental Libertador
+      </div>
+    </div>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

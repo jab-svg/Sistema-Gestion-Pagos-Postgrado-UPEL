@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasa BCV — SGPP UPEL</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="../img/upel-banner.png" alt="UPEL" />
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-section">Navegación</div>
+          <a href="dashboard.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" /></svg
+            >Dashboard</a
+          >
+          <a href="maestrias.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              /></svg
+            >Maestrías</a
+          >
+          <a href="estudiantes.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+              /></svg
+            >Estudiantes</a
+          >
+          <a href="pagos.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+              /></svg
+            >Pagos</a
+          >
+          <a href="tasa.html" class="nav-item active"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Tasa BCV</a
+          >
+          <a href="reportes.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              /></svg
+            >Reportes</a
+          >
+          <a href="usuarios.html" class="nav-item"
+            ><svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              /></svg
+            >Usuarios</a
+          >
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-info">
+            <div class="user-avatar" id="userAvatar">A</div>
+            <div>
+              <div class="user-name" id="userName">Admin</div>
+              <div class="user-role" id="userRole">superadmin</div>
+            </div>
+          </div>
+          <a href="#" class="btn-logout" id="btnLogout">Cerrar sesión</a>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="topbar">
+          <div>
+            <div class="topbar-title">Tasa Cambiaria BCV</div>
+            <div class="topbar-sub">
+              Gestión de la tasa oficial del Banco Central de Venezuela
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div id="alertTasa"></div>
+          <div class="grid-2">
+            <div>
+              <!-- Tasa vigente -->
+              <div class="card" style="margin-bottom: 20px">
+                <div class="card-title">Tasa Vigente</div>
+                <div style="text-align: center; padding: 20px 0">
+                  <div
+                    style="
+                      font-size: 0.74rem;
+                      color: var(--gray5);
+                      font-weight: 600;
+                      letter-spacing: 1px;
+                      text-transform: uppercase;
+                      margin-bottom: 8px;
+                    "
+                  >
+                    BCV Oficial
+                  </div>
+                  <div
+                    style="
+                      font-size: 3.5rem;
+                      font-weight: 800;
+                      color: var(--blue);
+                      line-height: 1;
+                    "
+                    id="tasaValor"
+                  >
+                    —
+                  </div>
+                  <div
+                    style="
+                      font-size: 0.9rem;
+                      color: var(--gray6);
+                      margin-top: 6px;
+                    "
+                  >
+                    Bs. por dólar
+                  </div>
+                  <div
+                    style="
+                      font-size: 0.78rem;
+                      color: var(--gray5);
+                      margin-top: 4px;
+                    "
+                    id="tasaFecha"
+                  >
+                    —
+                  </div>
+                </div>
+                <hr class="divider" />
+                <div style="display: flex; gap: 10px">
+                  <button class="btn btn-primary btn-full" id="btnBCV">
+                    <svg
+                      width="14"
+                      height="14"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                      />
+                    </svg>
+                    Obtener del BCV
+                  </button>
+                  <button
+                    class="btn btn-outline btn-full"
+                    id="btnMostrarManual"
+                  >
+                    Ingresar Manual
+                  </button>
+                </div>
+              </div>
+
+              <!-- Manual -->
+              <div class="card" id="cardManual" style="display: none">
+                <div class="card-title">Actualización Manual</div>
+                <div id="alertManual"></div>
+                <div class="form-group" style="margin-bottom: 14px">
+                  <label>Nueva Tasa (Bs/$)</label>
+                  <input
+                    type="number"
+                    id="inputTasa"
+                    step="0.01"
+                    placeholder="Ej: 36.58"
+                  />
+                </div>
+                <div class="form-group" style="margin-bottom: 18px">
+                  <label>Nota (opcional)</label>
+                  <input
+                    type="text"
+                    id="inputNota"
+                    placeholder="Referencia o fuente..."
+                  />
+                </div>
+                <button class="btn btn-success btn-full" id="btnGuardarManual">
+                  Guardar Tasa
+                </button>
+              </div>
+            </div>
+
+            <!-- Historial -->
+            <div class="card">
+              <div class="card-title">Historial de Tasas</div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Fecha</th>
+                      <th>Tasa Bs/$</th>
+                      <th>Fuente</th>
+                      <th>Usuario</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tablaHistorial">
+                    <tr>
+                      <td
+                        colspan="4"
+                        style="text-align: center; color: var(--gray5)"
+                      >
+                        Cargando...
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        if (!verificarAuth()) return;
+        const u = getUsuario();
+        if (u) {
+          document.getElementById("userName").textContent = u.nombre;
+          document.getElementById("userRole").textContent = u.rol;
+          document.getElementById("userAvatar").textContent = u.nombre
+            .charAt(0)
+            .toUpperCase();
+        }
+        document.getElementById("btnLogout").addEventListener("click", (e) => {
+          e.preventDefault();
+          cerrarSesion();
+        });
+
+        await cargarTasa();
+        await cargarHistorial();
+
+        document
+          .getElementById("btnBCV")
+          .addEventListener("click", async () => {
+            document.getElementById("btnBCV").textContent = "Consultando...";
+            document.getElementById("btnBCV").disabled = true;
+            try {
+              await post("/tasa/bcv", {});
+              await cargarTasa();
+              await cargarHistorial();
+              mostrarAlerta(
+                document.getElementById("alertTasa"),
+                "Tasa actualizada desde el BCV",
+                "success",
+              );
+            } catch (err) {
+              mostrarAlerta(document.getElementById("alertTasa"), err.message);
+            } finally {
+              document.getElementById("btnBCV").disabled = false;
+              document.getElementById("btnBCV").innerHTML =
+                `<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg> Obtener del BCV`;
+            }
+          });
+
+        document
+          .getElementById("btnMostrarManual")
+          .addEventListener("click", () => {
+            const c = document.getElementById("cardManual");
+            c.style.display = c.style.display === "none" ? "block" : "none";
+          });
+
+        document
+          .getElementById("btnGuardarManual")
+          .addEventListener("click", async () => {
+            const tasa_bs = document.getElementById("inputTasa").value;
+            const nota = document.getElementById("inputNota").value;
+            const alert = document.getElementById("alertManual");
+            if (!tasa_bs) {
+              mostrarAlerta(alert, "La tasa es requerida");
+              return;
+            }
+            try {
+              await post("/tasa/manual", { tasa_bs, nota });
+              await cargarTasa();
+              await cargarHistorial();
+              document.getElementById("inputTasa").value = "";
+              document.getElementById("inputNota").value = "";
+              document.getElementById("cardManual").style.display = "none";
+              mostrarAlerta(
+                document.getElementById("alertTasa"),
+                "Tasa registrada correctamente",
+                "success",
+              );
+            } catch (err) {
+              mostrarAlerta(alert, err.message);
+            }
+          });
+      });
+
+      async function cargarTasa() {
+        try {
+          const r = await get("/tasa/vigente");
+          document.getElementById("tasaValor").textContent = r.datos.tasa_bs;
+          document.getElementById("tasaFecha").textContent =
+            `Actualizada: ${formatFecha(r.datos.fecha)}`;
+        } catch {
+          document.getElementById("tasaValor").textContent = "Sin tasa";
+          document.getElementById("tasaFecha").textContent =
+            "No hay tasa registrada";
+        }
+      }
+
+      async function cargarHistorial() {
+        try {
+          const r = await get("/tasa/historial");
+          const tbody = document.getElementById("tablaHistorial");
+          if (r.datos.length === 0) {
+            tbody.innerHTML =
+              '<tr><td colspan="4" style="text-align:center;color:var(--gray5)">Sin registros</td></tr>';
+            return;
+          }
+          tbody.innerHTML = r.datos
+            .map(
+              (t, i) => `
+            <tr>
+              <td style="font-size:.85rem">${formatFecha(t.fecha)}</td>
+              <td style="font-weight:${i === 0 ? "700" : "400"};color:${i === 0 ? "var(--blue)" : "inherit"}">${t.tasa_bs}</td>
+              <td><span class="badge ${t.fuente.includes("AUTO") ? "badge-success" : "badge-warn"}">${t.fuente.includes("AUTO") ? "BCV Auto" : "Manual"}</span></td>
+              <td style="font-size:.82rem;color:var(--gray5)">${t.usuario}</td>
+            </tr>`,
+            )
+            .join("");
+        } catch (err) {
+          mostrarAlerta(document.getElementById("alertTasa"), err.message);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "name": "sgppupel",
+  "version": "1.0.0",
+  "description": "Sistema de Gestión de Pagos de Postgrado — UPEL Extensión Maracaibo",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"nodemon server.js\" \"wait-on http://localhost:3000 && electron .\"",
+    "build": "electron-builder build --win --x64",
+    "build-installer": "electron-builder build --win --x64 --config.nsis.oneClick=false",
+    "rebuild-electron": "electron-rebuild -f -w better-sqlite3",
+    "rebuild-node": "npm rebuild better-sqlite3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.9.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.1.1",
+    "pdfkit": "^0.18.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "electron": "^35.7.5",
+    "electron-builder": "^26.8.1",
+    "nodemon": "^3.1.14",
+    "wait-on": "^8.0.5"
+  },
+  "build": {
+    "appId": "ve.edu.upel.sgpp",
+    "productName": "SGPP UPEL",
+    "copyright": "UPEL — Extensión Maracaibo",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "server.js",
+      "src/**/*",
+      "public/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": ".env",
+        "to": ".env"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "public/img/upel-logo.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "SGPP UPEL"
+    }
+  }
+}
